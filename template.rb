@@ -13,6 +13,11 @@ gem_group :development, :test do
   gem 'simplecov' if yes?('use simplecov ?')
 end
 
+gem_group :development do
+  gem 'better_errors'
+  gem 'binding_of_caller'
+end
+
 # rspec initalize setting
 run 'bundle install'
 run 'rm -rf test'
