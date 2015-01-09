@@ -1,4 +1,7 @@
 # Gemfile
+# authentication
+gem 'devise'
+
 # implements API
 gem 'grape'
 gem 'grape-jbuilder'
