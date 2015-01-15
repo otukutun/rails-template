@@ -1,4 +1,5 @@
 # Gemfile
+repo_url = 'https://github.com/otukutun/rails-template/blob/master'
 
 # authentication
 if yes?('use devise ?')
@@ -60,6 +61,10 @@ generate 'rspec:install'
 
 # rm unused files
 run "rm README.rdoc"
+
+# .gitignore
+remove_file '.gitignore'
+ get "#{repo_url}/gitignore", '.gitignore'
 
 # git initalize setting
 after_bundle do
