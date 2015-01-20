@@ -20,18 +20,18 @@ end
 gem 'mysql2'
 gem 'slim-rails'
 gem 'settingslogic' # environment variables
-gem 'draper', :github => 'drapergem/draper'
+
+gem 'draper'
 gem 'redis'
 
 gem 'carrierwave'
-gem 'rmagick'
-gem 'fog'
+#gem 'fog'
 
 gem 'versionist' # api versioning
 
 gem 'kaminari' # pagination
 
-# grape 
+# grape
 if yes?('use grape ?')
   gem 'grape'
   gem 'grape-jbuilder'
@@ -39,6 +39,12 @@ end
 
 
 gem_group :development, :test do
+  gem 'pry-rails'
+  gem 'pry-doc'
+  gem 'pry-stack_explorer'
+  gem 'pry-byebug'
+  gem 'hirb'
+  gem 'hirb-unicode'
   gem 'rspec-rails'
   gem 'factory_girl_rails'
   gem 'simplecov' if yes?('use simplecov ?')
@@ -64,7 +70,10 @@ run "rm README.rdoc"
 
 # .gitignore
 remove_file '.gitignore'
- get "#{repo_url}/gitignore", '.gitignore'
+get "#{repo_url}/gitignore", '.gitignore'
+
+# .pryrc
+get "#{repo_url}/pryrc", '.pryrc'
 
 # git initalize setting
 after_bundle do
