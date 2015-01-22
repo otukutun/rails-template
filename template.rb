@@ -49,6 +49,13 @@ gem_group :development, :test do
   gem 'factory_girl_rails'
   gem 'simplecov' if yes?('use simplecov ?')
   gem 'autodoc'
+  gem 'rubocop'
+
+  # guard
+  gem 'guard'
+  gem 'guard-rspec'
+  gem 'guard-bundler'
+  gem 'guard-rubocop'
 end
 
 gem_group :development do
