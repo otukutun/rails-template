@@ -1,5 +1,5 @@
 # Gemfile
-repo_url = 'https://github.com/otukutun/rails-template/blob/master'
+repo_url = 'https://raw.githubusercontent.com/otukutun/rails-template/master'
 
 # authentication
 if yes?('use devise ?')
