@@ -47,7 +47,7 @@ gem_group :development, :test do
   gem 'hirb-unicode'
   gem 'rspec-rails'
   gem 'factory_girl_rails'
-  gem 'simplecov' if yes?('use simplecov ?')
+  gem 'simplecov'
   gem 'autodoc'
   gem 'rubocop'
 
