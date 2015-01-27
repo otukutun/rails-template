@@ -47,6 +47,12 @@ gem_group :development, :test do
   gem 'hirb-unicode'
   gem 'rspec-rails'
   gem 'factory_girl_rails'
+  gem 'faker'
+  gem 'faker-japanese'
+  gem 'capybara'
+  gem 'database_cleaner'
+  gem 'launchy'
+  gem 'selenium-webdriver'
   gem 'simplecov'
   gem 'autodoc'
   gem 'rubocop'
@@ -56,6 +62,7 @@ gem_group :development, :test do
   gem 'guard-rspec'
   gem 'guard-bundler'
   gem 'guard-rubocop'
+  gem 'shoulda-matchers'
 end
 
 gem_group :development do
